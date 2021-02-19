@@ -1,0 +1,48 @@
+.containerMax {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 90%;
+	margin: 100px auto;
+}
+
+.container {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap-reverse;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+
+.item2 {
+	order: -1;
+}
+
+.item {
+	display: block;
+	flex: 1 0 100px;
+	width: fit-content;
+	height: auto;
+	margin: 10px;
+}
+
+p.item {
+	width: 300px;
+	text-align: center;
+	border: 1px solid white;
+	flex-shrink: 1;
+}
+
+img.item:first-child {
+	align-self: flex-start;
+	flex-grow: 0.3;
+}
+
+img.item:last-child {
+	align-self: flex-end;
+	flex-basis: 400px;
+}
+
+.new {
+	flex-grow: 2;
+}
